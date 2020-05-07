@@ -67,7 +67,8 @@ The doctor comes into a patient room and has decided the patient is finished wit
 ## 5. Application Program Interfaces
 
 **5.1. Information Processing**
-- newPatient(ID, name, age, gender, address, phone#, DOB, SSN, status) ▪ Return ID or NULL for error
+- newPatient(ID, name, age, gender, address, phone#, DOB, SSN, status) 
+  - Return ID or NULL for error
 - newStaff(ID, name, age, gender, address, phone#, jobTitle, department, professionalTitle)
   - Return ID or NULL for error
 - addWard(wardNumber, capacity, patientsSSN, chargesPerDay)
@@ -141,7 +142,7 @@ will not be updated
 - patientListByDoctor(doctorID)
   - Return list of patient treated by a given doctor
 - listStaffByRole(jobTitle)
- - Return a list of staff with given job title
+  - Return a list of staff with given job title
 
 ## 6. Data Views
 
