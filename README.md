@@ -122,7 +122,8 @@ will not be updated
 - updateBillingAccount(patientID, responsibleSSN, billingAddress, visitDate, paymantInfo, billingRecordID)
   - Return confirmation
   - if NULL value for responsibleSSN/billingAddress/visitDate/paymentInfo, these will not be updated
-- addFeeToBillingRecord(billingRecordID, feeID) ▪ Return confirmation
+- addFeeToBillingRecord(billingRecordID, feeID)
+  - Return confirmation
 
 **5.4. Reports**
 -  getPatientMedicalRecord(patientID, startDate, endDate)
