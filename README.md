@@ -1,7 +1,7 @@
 ## Wolf Hospital Management Database System
 # For Hospital in North Carolina
 
-#Goal
+# Goal
 To create a robust database system able to used within the Command Line (User Interface) that can be operated by a Nurse, Doctor and/or Patient.
 
 # Assumptions
@@ -24,7 +24,7 @@ To create a robust database system able to used within the Command Line (User In
 17. Assume a treatment in the hospital will be defined as a prescription given to the patient.
 18. Assume a test is not added to a patient’s medical record until the test has been completed.
 
-#1. Problem Description
+# 1. Problem Description
 The Wolf Hospital Database Management System for a hospital in North Carolina will be used by management, which includes registrations operators, nurses, and doctors. Each user will have specific tasks and operations that can be performed using this system. The database system will maintain information about staff, patients, check-in, billing, medical records, and ward.
 The purpose of this database system is to provide an interface for information storage and retrieval to allow the staff to perform these tasks and operations more efficiently. These tasks include:
   i. Process information about staff, patients, and wards
@@ -33,12 +33,14 @@ The purpose of this database system is to provide an interface for information s
   iv. Generate billing accounts for each patient
   v. Report medical history
 The advantages of this database when implemented correctly. The staff will now be able to maintain billing accounts and medical records for each person, process information and generate reports efficiently.
-#2. User Classes
+
+# 2. User Classes
 The Project Narrative lists four tasks that are intended for three classes of users that the database system will need to support. These user classes are:
 Registration Operators are users who process information for patients that are admitted into the hospital for check-in. Operators are responsible for generating reports and checking the availability of ward information, assigning and reserving a bed for each patient. Operators can also bill patients and their insurance, as well a track billing information. Operators can also view their own personal information and also information of the doctors and nurses.
 Doctors recommend and perform tests for patients and manage medical records. This user inputs the data for the treatment, test, prescription, and diagnosis.
 Nurses check available wards/beds and assign patients. Nurses also have to ability to treat patients.
-#3. Main Entities
+
+# 3. Main Entities
 The five entities that are the most relevant to the tasks and operations required by our clients are the following.
 ● Patient/Staff: ID, name, age, gender, address, phone#
 o Patient: SSN (if available), DOB (date of birth), status (processing
@@ -60,7 +62,7 @@ The hospital is looking for a new nurse because they realized a new hire could h
 **4.3. Check out patient**
 The doctor comes into a patient room and has decided the patient is finished with treatment and is clear for discharge from the hospital. The doctor updates the patient medical records with the recent treatment and diagnosis details. The registration operator then releases the bed of the patient and generates a bill for the patient for their treatment and stay.
 
-#5. Application Program Interfaces
+# 5. Application Program Interfaces
 
 **5.1. Information Processing**
 ● newPatient(ID, name, age, gender, address, phone#, DOB, SSN, status) ▪ Return ID or NULL for error
@@ -134,7 +136,7 @@ will not be updated
 ● listStaffByRole(jobTitle)
 ▪ Return a list of staff with given job title
 
-#6. Data Views
+# 6. Data Views
 
 **6.1. Registration Operator**
 Registration operators have several responsibilities such as processing check-in information, registering first-time patients, billing patients for their treatments and stay and assigning patients to a ward. Since operators have the most responsibility in the system, it is reasonable to assume they will have the most privilege. The following are data elements that the registration operator should be able to view in order to complete their tasks:
