@@ -1,6 +1,12 @@
 # Wolf Hospital Management Database System
 ## For Hospital in North Carolina
 
+## Instructions
+1. Connect to local or remote jdbc database. _I used MAMP to create a local database server_.
+2. Create username and password to connedt to local databasw within the code.
+3. In IntelliJ, clone repository and press run. In terminal, use command `javac Main` to compile and `java WolfHospital` to run program.
+4. Follow prompt.
+
 ## Goal
 To create a robust database system able to used within the Command Line (User Interface) that can be operated by a Nurse, Doctor and/or Patient.
 
